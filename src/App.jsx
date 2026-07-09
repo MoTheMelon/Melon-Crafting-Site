@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext'
 import NavBar from './components/NavBar'
 import AccountButton from './components/AccountButton'
@@ -11,7 +11,7 @@ import './App.css'
 function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <HashRouter>
         <AccountButton />
         <NavBar />
         <Routes>
@@ -34,7 +34,7 @@ function App() {
           />
           <Route path="/groceries" element={<Groceries />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </AuthProvider>
   )
 }
