@@ -1,0 +1,21 @@
+.require-auth {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--text);
+  text-transform: lowercase;
+}
+
+.require-auth-button {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--accent-outline);
+  background: var(--accent);
+  color: var(--accent-text);
+  font: inherit;
+  text-transform: lowercase;
+  cursor: pointer;
+}

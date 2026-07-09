@@ -1,0 +1,31 @@
+.square-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.square-button:hover {
+  background: var(--accent-bg);
+}
+
+.square-button:hover .square rect {
+  fill: var(--accent);
+  stroke: var(--accent-outline);
+}
+
+.square-button-active {
+  background: var(--accent-bg);
+}
+
+.square-button-active .square rect {
+  fill: var(--accent);
+  stroke: var(--accent-outline);
+}

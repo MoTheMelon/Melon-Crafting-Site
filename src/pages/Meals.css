@@ -1,0 +1,83 @@
+.meals-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 0 24px 24px;
+  gap: 20px;
+}
+
+.meals-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.meals-search {
+  flex: 1;
+  min-width: 160px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  color: var(--text-h);
+  font: inherit;
+}
+
+.meals-new-button {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--accent-outline);
+  background: var(--accent);
+  color: var(--accent-text);
+  font: inherit;
+  text-transform: lowercase;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.meals-filters {
+  display: flex;
+  gap: 8px;
+}
+
+.meals-filter {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  color: var(--text);
+  font: inherit;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.meals-filter-active {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+  color: var(--text-h);
+}
+
+.meals-gallery {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  align-content: start;
+  padding-bottom: 12px;
+}
+
+@media (max-width: 1000px) {
+  .meals-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .meals-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,13 @@
+.triangle {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.triangle polygon {
+  fill: var(--accent-light);
+  stroke: var(--accent-outline);
+  stroke-width: 4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}

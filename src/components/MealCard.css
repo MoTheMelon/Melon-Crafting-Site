@@ -1,0 +1,51 @@
+.meal-card-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+}
+
+.meal-card-delete-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(243, 159, 159, 0.28);
+  transition: background 0.15s ease;
+}
+
+.meal-card-tile-delete:hover .meal-card-delete-overlay {
+  background: rgba(243, 159, 159, 0.55);
+}
+
+.meal-card-image {
+  aspect-ratio: 1 / 1;
+  background: var(--social-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meal-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.meal-card-placeholder {
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+}
+
+.meal-card-name {
+  padding: 10px 12px;
+  text-align: center;
+  color: var(--text-h);
+  text-transform: lowercase;
+}

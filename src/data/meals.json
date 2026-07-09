@@ -1,0 +1,8 @@
+[
+  { "id": "pasta", "name": "pasta", "image": "", "category": "dinner" },
+  { "id": "pancakes", "name": "pancakes", "image": "", "category": "breakfast" },
+  { "id": "salad", "name": "salad", "image": "", "category": "lunch" },
+  { "id": "smoothie", "name": "smoothie", "image": "", "category": "snack" },
+  { "id": "tacos", "name": "tacos", "image": "", "category": "dinner" },
+  { "id": "oatmeal", "name": "oatmeal", "image": "", "category": "breakfast" }
+]

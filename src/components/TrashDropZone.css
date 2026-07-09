@@ -1,0 +1,18 @@
+.trash-drop-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: background 0.15s ease;
+}
+
+.trash-drop-zone-over {
+  background: var(--accent-bg);
+}
+
+.trash-drop-zone-over .square rect {
+  fill: var(--accent);
+  stroke: var(--accent-outline);
+}

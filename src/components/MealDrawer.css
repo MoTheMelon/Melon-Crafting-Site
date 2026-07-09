@@ -1,0 +1,73 @@
+.meal-drawer {
+  --panel-height: 320px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  width: min(1126px, 100%);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, var(--panel-height));
+  transition: transform 0.3s ease;
+}
+
+.meal-drawer-open {
+  transform: translate(-50%, 0);
+}
+
+.meal-drawer-hover-zone {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 14px;
+  z-index: 40;
+}
+
+.meal-drawer-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 40px;
+  margin-bottom: -1px;
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: 18px 18px 0 0;
+  background: var(--code-bg);
+  cursor: pointer;
+}
+
+.meal-drawer-panel {
+  width: 100%;
+  height: var(--panel-height);
+  padding: 20px;
+  box-sizing: border-box;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px 20px 0 0;
+  box-shadow: var(--shadow);
+  overflow-y: auto;
+}
+
+.meal-drawer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.meal-card {
+  padding: 14px 10px;
+  border-radius: 14px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  color: var(--text-h);
+  text-align: center;
+  cursor: grab;
+  user-select: none;
+}
+
+.meal-card:active {
+  cursor: grabbing;
+}

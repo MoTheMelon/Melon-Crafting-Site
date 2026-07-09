@@ -1,0 +1,22 @@
+.triangle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.triangle-button:hover {
+  background: var(--accent-bg);
+}
+
+.triangle-button:hover .triangle polygon {
+  fill: var(--accent);
+  stroke: var(--accent-outline);
+}

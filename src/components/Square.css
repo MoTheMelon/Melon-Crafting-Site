@@ -1,0 +1,11 @@
+.square {
+  width: 20px;
+  height: 20px;
+}
+
+.square rect {
+  fill: var(--accent-light);
+  stroke: var(--accent-outline);
+  stroke-width: 4;
+  stroke-linejoin: round;
+}

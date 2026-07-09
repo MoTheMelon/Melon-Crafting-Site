@@ -1,0 +1,83 @@
+.week-calendar {
+  width: 100%;
+  max-width: 900px;
+}
+
+.week-calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.week-range-label {
+  min-width: 150px;
+  text-align: center;
+  font-family: var(--heading);
+  font-size: 20px;
+  color: var(--text-h);
+}
+
+.week-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-height: 280px;
+  padding: 14px 8px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.day-column-over {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.day-label {
+  text-transform: lowercase;
+  font-size: 14px;
+  color: var(--text-h);
+}
+
+.day-date {
+  font-size: 12px;
+  color: var(--text);
+}
+
+.day-meals {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.meal-chip {
+  padding: 6px 8px;
+  border-radius: 10px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  color: var(--text-h);
+  font-size: 13px;
+  text-align: center;
+  word-break: break-word;
+}
+
+@media (max-width: 700px) {
+  .week-days {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(88px, 1fr);
+    overflow-x: auto;
+  }
+}
